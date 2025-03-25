@@ -2,7 +2,7 @@
 Saya Nuansa Bening Aura Jelita dengan NIM 2301410 mengerjakan Tugas Praktikum 5 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 # Desain Program
-Program ini dirancang untuk mengelola data mahasiswa (terkhsusus KEMAKOM) dengan antarmuka grafis (GUI) menggunakan Java Swing. 
+Program ini dirancang untuk mengelola data mahasiswa (terkhusus KEMAKOM) dengan antarmuka grafis (GUI) menggunakan Java Swing. 
 Program ini memungkinkan pengguna untuk melihat, menambah, memperbarui, dan menghapus data mahasiswa dengan mudah melalui koneksi database.
 Program ini terdiri dari 3 kelas utama:
 
@@ -25,6 +25,14 @@ Program ini terdiri dari 3 kelas utama:
    * `selectQuery` untuk mengeksekusi query SELECT
    * `insertUpdateDeleteQuery` untuk mengeksekusi query INSERT, UPDATE, DELETE
    * Getter untuk statement
+
+## Implementasi Database
+Program menggunakan database MySQL dengan nama `db_mahasiswa` yang memiliki tabel `mahasiswa` dengan struktur:
+* `id` - Primary Key
+* `nim` - VARCHAR, harus unik
+* `nama` - VARCHAR
+* `jenis_kelamin` - VARCHAR
+* `prodi` - VARCHAR
 
 ### 3. Menu (Antarmuka Pengguna)
 * Mewarisi kelas `JFrame`
@@ -74,10 +82,6 @@ Program ini terdiri dari 3 kelas utama:
 * Tombol "Update" kembali menjadi "Add" (jika sedang dalam mode edit)
 * Tombol "Delete" disembunyikan
 
-## Implementasi Database
-Program menggunakan database MySQL dengan nama `db_mahasiswa` yang memiliki tabel `mahasiswa` dengan struktur:
-* `id` - Primary Key
-* `nim` - VARCHAR, harus unik
-* `nama` - VARCHAR
-* `jenis_kelamin` - VARCHAR
-* `prodi` - VARCHAR
+# Dokumentasi
+![Deskripsi Gambar](Screenshots/SCREEN-RECORD.gif)
+
