@@ -26,14 +26,6 @@ Program ini terdiri dari 3 kelas utama:
    * `insertUpdateDeleteQuery` untuk mengeksekusi query INSERT, UPDATE, DELETE
    * Getter untuk statement
 
-## Implementasi Database
-Program menggunakan database MySQL dengan nama `db_mahasiswa` yang memiliki tabel `mahasiswa` dengan struktur:
-* `id` - Primary Key
-* `nim` - VARCHAR, harus unik
-* `nama` - VARCHAR
-* `jenis_kelamin` - VARCHAR
-* `prodi` - VARCHAR
-
 ### 3. Menu (Antarmuka Pengguna)
 * Mewarisi kelas `JFrame`
 * **Komponen UI:**
@@ -47,6 +39,14 @@ Program menggunakan database MySQL dengan nama `db_mahasiswa` yang memiliki tabe
    * `selectedIndex` - menyimpan indeks baris yang dipilih di tabel
    * `selectedId` - menyimpan ID mahasiswa yang sedang dipilih
    * `database` - objek Database untuk interaksi dengan database
+ 
+### Implementasi Database
+Program menggunakan database MySQL dengan nama `db_mahasiswa` yang memiliki tabel `mahasiswa` dengan struktur:
+* `id` - Primary Key
+* `nim` - VARCHAR, harus unik
+* `nama` - VARCHAR
+* `jenis_kelamin` - VARCHAR
+* `prodi` - VARCHAR
 
 # Alur Program
 ### 1. Mulai
